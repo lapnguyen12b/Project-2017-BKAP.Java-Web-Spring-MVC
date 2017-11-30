@@ -194,8 +194,6 @@ public class OrderModel {
                 od.setUserId(rs.getInt("UserId"));
                 od.setFullName(rs.getString("FullName"));
                 od.setPhone(rs.getInt("Phone"));
-//                od.setEmail(rs.getString("Mail"));
-//                od.setAddress(rs.getString("Address"));
                 od.setTotalAmount(rs.getFloat("Totalamount"));
                 od.setSms(rs.getString("Sms"));
                 od.setStatus(rs.getBoolean("Status"));                
