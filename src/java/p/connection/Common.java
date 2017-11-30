@@ -50,7 +50,7 @@ public class Common {
             numberFormat.setCurrency(currency);
               return numberFormat.format(price);
       }
-      /*loi value x10*/
+      /*loi value x10 10.0 --> 100 (0.o) */
       public static float convertToFloat(String number){
           float result = 0; 
           

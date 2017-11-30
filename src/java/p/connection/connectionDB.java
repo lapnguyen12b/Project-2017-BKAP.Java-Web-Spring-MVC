@@ -15,15 +15,22 @@ import java.util.logging.Logger;
 
 
 /**
- *
+ * @Depcription : Connect DB
  * @author LAPNV
+ */
+/**
+ *@Depcription set DRIVER,URL,USER,PASS
  */
 public class connectionDB {
     private static String DRIVER ="com.microsoft.sqlserver.jdbc.SQLServerDriver";
     private static String URL ="jdbc:sqlserver://localhost:1433;databaseName=FoodStore";
-    private static String USERNAME ="sa";
-    private static String PASS ="1234$";
+    private static String USERNAME ="lapnv";
+    private static String PASS ="12344";
     
+/**
+ *@Depcription Open Connection DB
+ *@return conn
+ */
     public static Connection OpenConnectionDB(){
         Connection conn = null;
         try {
@@ -38,6 +45,9 @@ public class connectionDB {
         }
         return conn;
     }
+/**
+ *@Depcription Close Connection DB
+ */
     public static void CloseconnectionDB(Connection conn,CallableStatement callSt){
         if (conn!=null) {
             try {
